@@ -1,0 +1,82 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	}
+	.container{
+		width:85%;
+		margin:auto;
+	}
+	.ani-cont{
+		text-align:center;
+		margin-top:10%;
+	}
+	.ani-cont {
+		font-style:italic;
+		/* font-size:20px; */
+		 width:100px;
+		 height:100px; 
+		 /* background-color:red; */
+		 border-radius:50%;
+		color:#000;
+		animation:heading 2s linear infinite;
+		transition:all 2s linear;
+		padding:30px;
+		border:5px dotted green;
+	}
+	@keyframes heading{
+		0%{
+			transform:rotate(45deg);
+		}
+		25%{
+			transform:rotate(90deg);
+		}
+		50%{
+			transform:rotate(180deg);
+		}
+		75%{
+			transform:rotate(270deg);
+		}
+		/* 90%{ */
+			/* transform:rotate:(360deg); */
+		/* } */
+		100%{
+			transform:rotate(360deg);
+		}
+	}
+	
+	
+	.ani-cont-two h1{
+		padding:40px;
+		font-style:italic;
+		/* width:100px; */
+		/* height:100px; */
+		/* background-color:red; */
+		text-align:center;
+		border-radius:50%;
+		margin:auto;
+		color:#999;
+		animation:two 1s linear infinite;
+		transition:all 1s linear;
+	}
+	
+	@keyframes two{
+		0%{
+			transform:scale(0);
+		}
+		25%{
+			transform:scale(0.5);
+		}
+		50%{
+			transform:scale(1);
+		}
+		75%{
+			transform:scale(1.5);
+		}
+		90%{
+			transform:scale:(2);
+		}
+		100%{
+			transform:scale(2.5);
+		}
+	}
